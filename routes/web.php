@@ -10,3 +10,6 @@
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/symlink', function () {
+    Artisan::call('storage:link');
+});
